@@ -1,0 +1,16 @@
+{
+  "name": "webrtc-multi-node",
+  "version": "1.0.0",
+  "description": "Basic webRTC node and sockets server to manage a simple multi-person chat room",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "node-uuid": "^1.4.7",
+    "socket.io": "^1.5.1"
+  }
+}

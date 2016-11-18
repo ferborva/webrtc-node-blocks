@@ -1,0 +1,49 @@
+<html>
+
+	<head>
+	    <title>Socket Chat Room</title>
+	    <!-- Compiled and minified CSS -->
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+		<script src="js/vendor/socket.io-stream.js"></script>
+
+		<style>
+			/*video {
+			  -webkit-filter: blur(4px) invert(1) opacity(0.5);
+			}*/
+
+			/*video {
+			   filter: hue-rotate(180deg) saturate(200%);
+			   -moz-filter: hue-rotate(180deg) saturate(200%);
+			   -webkit-filter: hue-rotate(180deg) saturate(200%);
+			}*/
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+			<h3 class="center-align">Video Stream</h3>
+			<video id="myvideo" class="responsive-video" autoplay controls></video>
+			<br>
+			<br>
+			<div class="center-align">
+				<!-- <a class="waves-effect waves-light btn" onclick="openSocket()"><i class="material-icons right">power_settings_new</i>Connect</a> -->
+				<a class="waves-effect waves-light btn" onclick="startEmitting()"><i class="material-icons right">settings_input_antenna</i>Emit</a>
+				<!-- <a class="waves-effect waves-light btn" onclick="stopEmitting()"><i class="material-icons right">stop</i>Stop</a> -->
+			</div>
+			<br>
+			<br>
+			<video id="broadcast" class="responsive-video" autoplay controls></video>
+		</div>
+
+	    <!-- Compiled and minified JavaScript -->
+	    <script src="js/app.js"></script>
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	</body>
+
+</html>
